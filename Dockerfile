@@ -12,10 +12,11 @@ RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get check
 RUN apt-get install -y -q curl wget git gcc build-essential
-RUN apt-get install -y -q libssl-dev
+RUN apt-get install -y -q libssl-dev libatlas-dev
 RUN apt-get install -y -q python3-dev python3-crypto python3-pip libpython3-dev 
 RUN apt-get install -y -q libffi-dev
-
+RUN apt-get install -y -q libatlas3-base libopenblas-dev libopenblas-base
+RUN apt-get install -y -q python3-numpy python3-scipy python3-pandas
 RUN pip3 install -U pip
 RUN pip install virtualenv
 
