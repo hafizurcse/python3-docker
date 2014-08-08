@@ -18,6 +18,7 @@ RUN apt-get install -y -q libffi-dev
 RUN apt-get install -y -q libatlas3-base libblas-dev libblas3 libatlas-base-dev libatlas-dev
 RUN apt-get install -y -q python3-numpy python3-scipy python3-pandas
 RUN apt-get install -y -q gfortran
+RUN apt-get install -y -q python3-gdbm
 RUN pip3 install -U pip
 RUN pip install virtualenv
 
