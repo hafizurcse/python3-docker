@@ -19,7 +19,11 @@ RUN apt-get install -y -q libatlas3-base libblas-dev libblas3 libatlas-base-dev 
 RUN apt-get install -y -q python3-numpy python3-scipy python3-pandas
 RUN apt-get install -y -q gfortran
 RUN apt-get install -y -q python3-gdbm
+RUN apt-get install -y -q liblapack-dev
+
+ENV LAPACK /usr/lib/liblapack.so
+ENV ATLAS /usr/lib/libatlas.so
+ENV BLAS /usr/lib/libblas.so
+
 RUN pip3 install -U pip
 RUN pip install virtualenv
-
-
