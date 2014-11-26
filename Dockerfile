@@ -1,5 +1,5 @@
 
-FROM python:3.4.1
+FROM python:3.4.2
 MAINTAINER Brian Thorne <hardbyte@gmail.com>
 
 # Set correct environment variables.
