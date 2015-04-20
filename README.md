@@ -1,20 +1,14 @@
-A Ubuntu server image that is able to build Python3 packages numpy, scipy and cryptography
+An image that is able to build Python3 packages numpy, scipy and cryptography
 from source.
 
 Image includes `build essential` as well as `wget`, `curl`, `git` and `python3.4`.
 All dependencies for building an optimized version of `numpy` such as `gfortran` 
 are included as well.
 
-
-Python 3 modules included:
+Python 3 modules installed:
 
 - pip, 
 - virtualenv
-- pycrypto
-- numpy
-- scipy
-- pandas
-
 
 ## Direct use:
 
@@ -41,6 +35,6 @@ CMD []
 ENTRYPOINT ["python3.4", "/app/main.py"]
 ```
 
-Also see (hardbyte/python3-app)[https://registry.hub.docker.com/u/hardbyte/python3-app/]
+Also see [hardbyte/python3-app](https://registry.hub.docker.com/u/hardbyte/python3-app/)
 for a repository to Dockerize standard Python applications.
 
